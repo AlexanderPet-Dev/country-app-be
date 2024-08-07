@@ -12,6 +12,21 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ *
+ * @author Alexander Petruta
+ *
+ * <p>
+ *     This is CountriesService CRUD class.
+ *     The class has the following CRUD functions :
+ *     Get all countries
+ *     Get country by id
+ *     Get country by name
+ *     Create countries
+ *     Update countries
+ *     Delete countries
+ * </p>
+ */
 @Service
 @Transactional
 public class CountriesService {

@@ -3,7 +3,6 @@ package com.country.app.countries_api.controller;
 import com.country.app.countries_api.model.Countries;
 import com.country.app.countries_api.service.CountriesService;
 import jakarta.validation.Valid;
-import org.hibernate.Internal;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +17,15 @@ import java.util.stream.Collectors;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
+/**
+ *
+ * @author Alexander Petruta
+ *
+ * <p>
+ *     This is CountriesController RestApi class.
+ *     Using Rest Request to be able to create, read, update, delete the data.
+ * </p>
+ */
 @RestController
 @RequestMapping(value = "/api")
 public class CountriesController {
