@@ -10,33 +10,33 @@ public class Countries {
     @Id
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator = "countries_id_seq")
+            generator = "countries_country_id_seq")
     @SequenceGenerator(
-            name = "countries_id_seq",
-            sequenceName = "countries_id_seq",
+            name = "countries_country_id_seq",
+            sequenceName = "countries_country_id_seq",
             allocationSize = 1,
             initialValue = 1)
-    private int id;
-    private String username;
+    private int countryId;
+    private String name;
     private float area;
     private Date nationalDay;
-    private String country_code2;
+    private String countryCode2;
     private String countryCode3;
 
-    public int getId() {
-        return id;
+    public int getCountryId() {
+        return countryId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCountryId(int countryId) {
+        this.countryId = countryId;
     }
 
-    public String getUsername() {
-        return username;
+    public String getName() {
+        return name;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public float getArea() {
@@ -55,12 +55,12 @@ public class Countries {
         this.nationalDay = nationalDay;
     }
 
-    public String getCountry_code2() {
-        return country_code2;
+    public String getCountryCode2() {
+        return countryCode2;
     }
 
-    public void setCountry_code2(String country_code2) {
-        this.country_code2 = country_code2;
+    public void setCountryCode2(String countryCode2) {
+        this.countryCode2 = countryCode2;
     }
 
     public String getCountryCode3() {
@@ -74,11 +74,11 @@ public class Countries {
     @Override
     public String toString() {
         return "Countries{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
+                "countryId=" + countryId +
+                ", name='" + name + '\'' +
                 ", area=" + area +
                 ", nationalDay=" + nationalDay +
-                ", country_code2='" + country_code2 + '\'' +
+                ", countryCode2='" + countryCode2 + '\'' +
                 ", countryCode3='" + countryCode3 + '\'' +
                 '}';
     }
